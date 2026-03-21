@@ -1,0 +1,7 @@
+## Vector DB Use Case
+
+In a law firm where searching through 500 page document would be a regular query, traditional keyword based databases would not suffice since such databases rely on exact character matching. Some common barriers it might face would be if a lawyer searches for "termination clauses" but the contract uses a different term for it like "conditions of dissolution" or "period of expiry" which would fail to output any results. Another drawback being if some term is spelled even off by a space or comma it would return no results since it wouldn't satisfy the specific character rule in tradtional databases. 
+
+A vector database comes in handy in such situations as it shifts to semantic understanding of data which processes the large documents into small text chunks and runs it through an embedding model which converts those text chunks into vectors or mathematical coordinates that represent meaning of the text which is more effecient than the specific words used. 
+
+The vector database plays the role of storing these embeddings as well as performing similarity so when a lawyer asks the database "what are the termination clauses?" the system converts the question as well into vector and matches them to words which have the highest **cosine similarity**. Since text chunks like termination, cancellation and others come in the same mathematical neighbourhood, the system retrieves this information without any specific terminology required, assuring human level comprehension with machine like speeds.
